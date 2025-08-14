@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Bookmark</title>
+    <link rel="stylesheet" href="../styles/edit-bookmark-styles.css" />
+  </head>
+  <body>
+    <h1>Edit Bookmark</h1>
+
+    <form id="edit-bookmark-form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" />
+
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url" />
+
+      <label for="category">Category:</label>
+      <input type="text" id="category" name="category" />
+
+      <label for="description">Description:</label>
+      <textarea
+        id="description"
+        name="description"
+        rows="4"
+        cols="50"
+      ></textarea>
+
+      <button onclick="updateBookmark(event)">Update Bookmark</button>
+    </form>
+
+    <script src="../script/edit-bookmark.js"></script>
+  </body>
+</html>

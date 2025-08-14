@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Bookmark</title>
+    <link rel="stylesheet" href="../styles/add-bookmark-styles.css" />
+  </head>
+  <body>
+    <h1>Add Bookmark</h1>
+
+    <form id="add-bookmark-form">
+      <label for="title">Title:</label>
+      <input 
+        type="text" 
+        id="title" 
+        name="title" 
+        placeholder="Enter a title (e.g., GitHub)" 
+        required 
+      />
+
+      <label for="url">URL:</label>
+      <input 
+        type="url" 
+        id="url" 
+        name="url" 
+        placeholder="Enter a URL (e.g., https://github.com)" 
+        required 
+      />
+
+      <label for="category">Category:</label>
+      <input 
+        type="text" 
+        id="category" 
+        name="category" 
+        placeholder="Enter a category (e.g., Code, Development, Git)" 
+      />
+
+      <label for="description">Description:</label>
+      <textarea
+        id="description"
+        name="description"
+        rows="4"
+        cols="50"
+        placeholder="Add a short description (e.g., Code hosting platform)"
+      ></textarea>
+
+      <button type="submit" onclick="addBookmark(event)">Add Bookmark</button>
+    </form>
+
+    <script src="../script/add-bookmark.js"></script>
+  </body>
+</html>
